@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pratham Athurti is a leading digital marketer and SEO expert in Dehradun, specializing in organic traffic growth, lead generation SEO, custom Shopify theme development, eCommerce growth, and 4x ROAS performance marketing with Top 3 Google rankings.">
+<meta name="keywords" content="pratham athurti digital marketer, seo expert in dehradun, organic traffic growth specialist, performance marketing expert, custom shopify theme developer, lead generation seo expert, 4x roas marketing expert, top 3 google ranking specialist, ecommerce growth specialist">
+<meta name="author" content="Pratham Athurti">
+<title> Pratham Athurti — Digital Marketing Consultant </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #070A0F;
+    --bg2: #0C1018;
+    --card: #111620;
+    --border: rgba(255,255,255,0.07);
+    --accent: #00E5FF;
+    --accent2: #7B5CFA;
+    --gold: #F5C842;
+    --text: #E8EAF0;
+    --muted: #7A8399;
+    --white: #fff;
+    
+    /* Fluid Typography System */
+    --step--1: clamp(0.85rem, 0.8rem + 0.2vw, 0.95rem);
+    --step-0: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+    --step-1: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+    --step-2: clamp(1.6rem, 1.3rem + 1vw, 2.2rem);
+    --step-3: clamp(2rem, 1.6rem + 1.8vw, 3.2rem);
+    --step-4: clamp(2.6rem, 2rem + 3vw, 4.5rem);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { 
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+    min-width: 0;
+  }
+  h1,h2,h3,h4 { font-family: 'Syne', sans-serif; }
+  
+  /* Container System */
+  .container {
+    width: min(1200px, 100% - 2rem);
+    margin-inline: auto;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: clamp(20px, 4vw, 40px);
+    padding: 20px clamp(20px, 5vw, 60px);
+    background: rgba(7,10,15,0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+    width: 100%;
+    max-width: 100vw;
+  }
+  .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 20px; color: var(--white); letter-spacing: -0.5px; }
+  .nav-logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 36px; }
+  .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color .2s; cursor: pointer; }
+  .nav-links a:hover { color: var(--white); }
+  .nav-cta {
+    background: var(--accent); color: #000; font-weight: 700; font-size: 13px;
+    padding: 10px 22px; border-radius: 6px; text-decoration: none; letter-spacing: .3px;
+    transition: opacity .2s; cursor: pointer; white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .nav-cta:hover { opacity: .85; }
+  
+  @media (max-width: 1200px) {
+    .nav-links { gap: 28px; }
+    .nav-links a { font-size: 13px; }
+  }
+  
+  @media (max-width: 1024px) {
+    nav { padding: 18px 40px; gap: 20px; }
+    .nav-links { gap: 24px; }
+    .nav-cta { padding: 9px 18px; font-size: 12px; }
+  }
+  
+  @media (max-width: 900px) {
+    .nav-links { gap: 20px; }
+    .nav-links a { font-size: 12px; }
+  }
+  
+  @media (max-width: 820px) {
+    .nav-links { display: none; }
+    nav { padding: 16px 32px; }
+  }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    padding: 180px clamp(20px, 5vw, 60px) 140px;
+    position: relative; 
+    overflow: visible;
+  }
+  
+  @media (max-height: 800px) {
+    #hero {
+      padding: 100px clamp(20px, 5vw, 60px) 100px;
+    }
+  }
+  
+  @media (max-height: 700px) {
+    #hero {
+      padding: 90px clamp(20px, 5vw, 60px) 80px;
+    }
+  }
+  
+  @media (max-height: 600px) {
+    #hero {
+      padding: 80px clamp(20px, 5vw, 60px) 60px;
+    }
+  }
+  .hero-grid-bg {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(0,229,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,229,255,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%);
+  }
+  .hero-glow {
+    position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
+    width: 900px; height: 600px;
+    background: radial-gradient(ellipse, rgba(123,92,250,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-content { 
+    position: relative; 
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(16px, 3vh, 32px);
+  }
+  
+  @media (max-height: 750px) {
+    .hero-content {
+      gap: clamp(14px, 2.5vh, 24px);
+    }
+  }
+  
+  @media (max-height: 650px) {
+    .hero-content {
+      gap: clamp(12px, 2vh, 20px);
+    }
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(0,229,255,0.08); border: 1px solid rgba(0,229,255,0.2);
+    color: var(--accent); font-size: 12px; font-weight: 600;
+    padding: 7px 16px; border-radius: 100px; letter-spacing: .8px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+  .hero-badge::before { content: '●'; font-size: 8px; animation: blink 1.5s infinite; }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+  
+  @media (max-height: 750px) {
+    .hero-badge {
+      font-size: 11px;
+      padding: 6px 14px;
+    }
+  }
+  
+  @media (max-height: 650px) {
+    .hero-badge {
+      font-size: 10px;
+      padding: 5px 12px;
+    }
+  }
+  .hero-headline {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    color: var(--white);
+    text-wrap: balance;
+  }
+  
+  @media (max-height: 750px) {
+    .hero-headline {
+      font-size: clamp(2.5rem, 5.5vw, 5rem);
+      line-height: 1.1;
+    }
+  }
+  
+  @media (max-height: 650px) {
+    .hero-headline {
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      line-height: 1.12;
+    }
+  }
+  
+  .hero-headline .line {
+    display: block;
+    margin-bottom: 6px;
+  }
+  .hero-headline .accent-word { color: var(--accent); }
+  .hero-headline .gold-word { color: var(--gold); }
+  .hero-sub {
+    font-size: clamp(15px, 1.8vw, 17px);
+    color: var(--muted);
+    max-width: 580px;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+  
+  @media (max-height: 750px) {
+    .hero-sub {
+      font-size: clamp(14px, 1.6vw, 16px);
+      line-height: 1.65;
+    }
+  }
+  
+  @media (max-height: 650px) {
+    .hero-sub {
+      font-size: clamp(13px, 1.5vw, 15px);
+      line-height: 1.6;
+    }
+  }
+  .hero-btns { 
+    display: flex; 
+    gap: 12px; 
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  
+  @media (max-height: 750px) {
+    .hero-btns {
+      gap: 10px;
+      margin-top: 32px;
+    }
+  }
+  
+  @media (max-height: 650px) {
+    .hero-btns {
+      gap: 8px;
+      margin-top: 24px;
+    }
+  }
+  .btn-primary {
+    background: var(--accent); color: #000; font-weight: 600; font-size: 13px;
+    padding: 11px 24px; border-radius: 6px; text-decoration: none;
+    display: inline-flex; align-items: center; gap: 6px; transition: transform .2s, opacity .2s;
+    cursor: pointer; white-space: nowrap;
+    flex: 0 1 auto;
+    justify-content: center;
+  }
+  .btn-primary:hover { transform: translateY(-2px); opacity: .9; }
+  
+  @media (max-height: 750px) {
+    .btn-primary {
+      padding: 10px 22px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-height: 650px) {
+    .btn-primary {
+      padding: 9px 20px;
+      font-size: 12px;
+    }
+  }
+  .btn-outline {
+    background: transparent; border: 1px solid rgba(255,255,255,0.15); color: var(--white);
+    font-weight: 500; font-size: 13px; padding: 11px 24px; border-radius: 6px;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+    transition: border-color .2s, background .2s; cursor: pointer;
+    flex: 0 1 auto;
+    justify-content: center;
+  }
+  .btn-outline:hover { border-color: var(--accent); background: rgba(0,229,255,0.05); }
+  
+  @media (max-height: 750px) {
+    .btn-outline {
+      padding: 10px 22px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-height: 650px) {
+    .btn-outline {
+      padding: 9px 20px;
+      font-size: 12px;
+    }
+  }
+  /* ── STATS SECTION ── */
+  #stats {
+    padding: 40px clamp(20px, 5vw, 60px);
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease;
+  }
+  
+  #stats.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .stat {
+    text-align: left;
+  }
+  
+  .stat-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--white);
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .stat-num span {
+    color: var(--accent);
+  }
+  
+  .stat-label {
+    font-size: 13px;
+    color: var(--muted);
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    #stats {
+      padding: 35px clamp(20px, 5vw, 60px);
+    }
+    
+    .stats-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    
+    .stat-num {
+      font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #stats {
+      padding: 30px 20px;
+    }
+    
+    .stats-container {
+      gap: 20px;
+    }
+    
+    .stat-num {
+      font-size: 26px;
+    }
+    
+    .stat-label {
+      font-size: 12px;
+    }
+  }
+
+  /* ── SECTION COMMON ── */
+  section { 
+    padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 60px); 
+  }
+  .section-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: var(--step-3);
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .section-sub { font-size: 17px; color: var(--muted); max-width: 520px; line-height: 1.7; margin-bottom: 60px; }
+  .section-divider {
+    width: 100%; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+  }
+
+  /* ── ABOUT ── */
+  #about { background: var(--bg2); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .about-visual {
+    position: relative; aspect-ratio: 1;
+    background: linear-gradient(135deg, rgba(0,229,255,0.06), rgba(123,92,250,0.1));
+    border-radius: 20px; border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .about-avatar-placeholder {
+    width: 120px; height: 120px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent2), var(--accent));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif; font-size: 42px; font-weight: 800; color: #fff;
+  }
+  .about-badge-float {
+    position: absolute; bottom: 28px; left: 28px;
+    background: rgba(0,0,0,0.8); border: 1px solid var(--border);
+    padding: 14px 20px; border-radius: 12px; backdrop-filter: blur(8px);
+  }
+  .about-badge-float strong { display: block; color: var(--white); font-size: 22px; font-family: 'Syne', sans-serif; }
+  .about-badge-float span { color: var(--muted); font-size: 12px; }
+  .about-text p { color: var(--muted); line-height: 1.9; margin-bottom: 20px; font-size: 16px; }
+  .about-text p strong { color: var(--text); }
+  .about-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .about-pill {
+    background: rgba(0,229,255,0.07); border: 1px solid rgba(0,229,255,0.15);
+    color: var(--accent); padding: 7px 16px; border-radius: 100px; font-size: 13px; font-weight: 500;
+  }
+
+  /* ── SERVICES ── */
+  #services { background: var(--bg); }
+  .services-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); 
+    gap: 20px; 
+  }
+  .service-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 32px; position: relative; overflow: hidden;
+    transition: border-color .3s, transform .3s;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0; transition: opacity .3s;
+  }
+  .service-card:hover { border-color: rgba(0,229,255,0.2); transform: translateY(-4px); }
+  .service-card:hover::before { opacity: 1; }
+  .service-icon {
+    width: 48px; height: 48px; border-radius: 12px; margin-bottom: 20px;
+    display: flex; align-items: center; justify-content: center; font-size: 22px;
+  }
+  .service-card h3 { font-size: 20px; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+  .service-card p { color: var(--muted); font-size: 14px; line-height: 1.7; margin-bottom: 20px; }
+  .service-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .service-tag {
+    font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 100px;
+    background: rgba(255,255,255,0.05); color: var(--muted); border: 1px solid var(--border);
+    letter-spacing: .3px;
+  }
+
+  /* ── CASE STUDIES ── */
+  #casestudies { background: var(--bg2); }
+  .cs-grid { display: grid; gap: 28px; }
+  .cs-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 20px;
+    overflow: hidden; cursor: default;
+  }
+  .cs-header {
+    padding: 32px 36px; display: flex; justify-content: space-between; align-items: flex-start;
+    border-bottom: 1px solid var(--border); flex-wrap: wrap; gap: 20px;
+  }
+  .cs-client-name { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; color: var(--white); }
+  .cs-client-meta { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .cs-role-badge {
+    background: rgba(123,92,250,0.12); border: 1px solid rgba(123,92,250,0.3);
+    color: #a78bfa; font-size: 12px; font-weight: 700; padding: 6px 14px;
+    border-radius: 100px; letter-spacing: .3px; white-space: nowrap;
+  }
+  .cs-body { padding: 32px 36px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 28px; }
+  .cs-section h4 { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  .cs-section p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+  .cs-metrics {
+    padding: 24px 36px; background: rgba(0,229,255,0.03);
+    border-top: 1px solid var(--border);
+    display: flex; gap: 32px; flex-wrap: wrap;
+  }
+  .cs-metric-num {
+    font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; color: var(--white);
+    display: block;
+  }
+  .cs-metric-num.green { color: #34D399; }
+  .cs-metric-num.gold { color: var(--gold); }
+  .cs-metric-num.blue { color: var(--accent); }
+  .cs-metric-label { font-size: 12px; color: var(--muted); }
+  .mini-chart {
+    display: flex; align-items: flex-end; gap: 4px; height: 40px;
+  }
+  .mini-bar {
+    width: 10px; background: var(--accent); border-radius: 3px 3px 0 0;
+    opacity: .7; transition: opacity .2s; cursor: pointer;
+  }
+  .mini-bar:hover { opacity: 1; }
+
+  /* ── SKILLS ── */
+  #skills { background: var(--bg); }
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+  .skill-item { margin-bottom: 28px; }
+  .skill-header { display: flex; justify-content: space-between; margin-bottom: 10px; }
+  .skill-name { font-size: 15px; font-weight: 500; color: var(--text); }
+  .skill-pct { font-size: 14px; font-weight: 700; color: var(--accent); font-family: 'Syne', sans-serif; }
+  .skill-bar-bg { background: rgba(255,255,255,0.06); border-radius: 100px; height: 6px; overflow: hidden; }
+  .skill-bar-fill {
+    height: 100%; border-radius: 100px;
+    background: linear-gradient(90deg, var(--accent2), var(--accent));
+    width: 0; transition: width 1.2s cubic-bezier(.25,.46,.45,.94);
+  }
+  .tools-grid { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+  .tool-chip {
+    background: var(--card); border: 1px solid var(--border);
+    padding: 10px 18px; border-radius: 100px; font-size: 13px; font-weight: 500; color: var(--text);
+    display: flex; align-items: center; gap: 8px;
+    transition: border-color .2s, color .2s; cursor: default;
+  }
+  .tool-chip:hover { border-color: var(--accent); color: var(--accent); }
+  .tool-icon { font-size: 16px; }
+
+  /* ── TESTIMONIALS ── */
+  #testimonials { background: var(--bg2); }
+  .testi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px; }
+  .testi-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 28px; transition: border-color .3s; cursor: default;
+  }
+  .testi-card:hover { border-color: rgba(0,229,255,0.2); }
+  .testi-stars { color: var(--gold); font-size: 14px; letter-spacing: 2px; margin-bottom: 16px; }
+  .testi-quote { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 24px; font-style: italic; }
+  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-avatar {
+    width: 42px; height: 42px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent2), var(--accent));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px; color: #fff;
+    flex-shrink: 0;
+  }
+  .testi-name { font-weight: 600; font-size: 14px; color: var(--white); }
+  .testi-role { font-size: 12px; color: var(--muted); }
+  
+  @media (max-width: 1200px) {
+    .testi-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+  }
+  
+  @media (max-width: 900px) {
+    .testi-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .testi-card { padding: 24px; }
+  }
+  
+  @media (max-width: 650px) {
+    .testi-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--bg); text-align: center; }
+  .contact-inner { max-width: 660px; margin: 0 auto; }
+  .contact-headline {
+    font-size: var(--step-3);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .contact-headline span { color: var(--accent); }
+  .contact-sub { color: var(--muted); font-size: 17px; margin-bottom: 48px; line-height: 1.7; }
+  .contact-cards { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+  .contact-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+    padding: 24px 32px; display: flex; align-items: center; gap: 14px;
+    text-decoration: none; transition: border-color .2s, transform .2s;
+    min-width: 240px; cursor: pointer;
+  }
+  .contact-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .contact-card-icon { font-size: 28px; }
+  .contact-card-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); }
+  .contact-card-val { font-size: 14px; font-weight: 600; color: var(--white); margin-top: 2px; }
+  
+  @media (max-width: 900px) {
+    .contact-cards { gap: 14px; }
+    .contact-card { min-width: 220px; padding: 22px 28px; }
+  }
+  
+  @media (max-width: 650px) {
+    .contact-cards { flex-direction: column; gap: 12px; }
+    .contact-card { min-width: 100%; }
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 32px 60px; border-top: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+    color: var(--muted); font-size: 13px; flex-wrap: wrap; gap: 12px;
+  }
+
+  /* ── ANIMATIONS ── */
+  .fade-in { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+  .fade-in.visible { opacity: 1; transform: none; }
+
+  /* Large Tablets Landscape: 768px - 1024px */
+  @media (max-width: 1024px) {
+    #hero { 
+      padding: 100px 40px 60px;
+    }
+    .hero-sub { 
+      max-width: 520px;
+    }
+  }
+  
+  @media (max-width: 1024px) and (max-height: 700px) {
+    #hero {
+      padding: 90px 40px 50px;
+      min-height: auto;
+    }
+  }
+
+  /* Mobile transition - clean stacking */
+  @media (max-width: 768px) {
+    #hero { 
+      padding: 100px 32px 60px;
+    }
+    .hero-sub { 
+      max-width: 100%; 
+    }
+    .hero-badge { 
+      font-size: 11px; 
+      padding: 6px 14px;
+    }
+    .hero-glow { 
+      width: 700px; 
+      height: 500px; 
+    }
+    
+    .about-grid { grid-template-columns: 1fr; }
+    .cs-body { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  }
+  
+  @media (max-width: 768px) and (max-height: 700px) {
+    #hero {
+      padding: 85px 32px 45px;
+      min-height: auto;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .services-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Mobile Phones: 480px and below */
+  @media (max-width: 480px) {
+    nav { 
+      padding: 12px 20px; 
+    }
+    .nav-logo { 
+      font-size: 17px; 
+    }
+    .nav-cta { 
+      padding: 7px 14px; 
+      font-size: 10px; 
+    }
+    
+    #hero { 
+      padding: 85px 20px 45px;
+    }
+    .hero-sub { 
+      line-height: 1.65; 
+    }
+    .hero-btns { 
+      gap: 8px;
+    }
+    .hero-badge { 
+      font-size: 9px; 
+      padding: 5px 11px;
+    }
+    .hero-glow { 
+      width: 400px; 
+      height: 350px; 
+      top: -120px; 
+    }
+    .hero-grid-bg { 
+      background-size: 35px 35px; 
+    }
+    
+    .section-title { 
+      font-size: clamp(24px, 5.5vw, 36px); 
+    }
+    .section-sub { 
+      font-size: 15px; 
+    }
+    
+    .about-visual { 
+      min-height: 300px; 
+    }
+    .about-badge-float { 
+      padding: 12px 16px; 
+      bottom: 20px; 
+      left: 20px; 
+    }
+    .about-badge-float strong { 
+      font-size: 20px; 
+    }
+    .about-text p { 
+      font-size: 14px; 
+    }
+    .about-pills { 
+      gap: 8px; 
+    }
+    .about-pill { 
+      font-size: 11px; 
+      padding: 6px 13px; 
+    }
+    
+    .service-card { 
+      padding: 26px; 
+    }
+    .service-icon { 
+      width: 42px; 
+      height: 42px; 
+      font-size: 20px; 
+    }
+    .service-card h3 { 
+      font-size: 18px; 
+    }
+    .service-card p { 
+      font-size: 13px; 
+    }
+    .service-tag { 
+      font-size: 10px; 
+      padding: 4px 10px; 
+    }
+    
+    .skill-name { 
+      font-size: 13px; 
+    }
+    .skill-pct { 
+      font-size: 12px; 
+    }
+    .skill-bar-bg { 
+      height: 5px; 
+    }
+    .tool-chip { 
+      font-size: 12px; 
+      padding: 8px 14px; 
+    }
+    
+    .testi-card { 
+      padding: 22px; 
+    }
+    .testi-quote { 
+      font-size: 14px; 
+    }
+    .testi-name { 
+      font-size: 13px; 
+    }
+    .testi-role { 
+      font-size: 11px; 
+    }
+    
+    .contact-headline { 
+      font-size: clamp(26px, 7.5vw, 44px); 
+    }
+    .contact-sub { 
+      font-size: 15px; 
+    }
+    
+    footer { 
+      padding: 22px 20px; 
+      flex-direction: column; 
+      text-align: center; 
+      gap: 10px; 
+      font-size: 12px; 
+    }
+  }
+  
+  @media (max-width: 480px) and (max-height: 650px) {
+    #hero {
+      padding: 75px 20px 35px;
+      min-height: auto;
+    }
+    .hero-headline {
+      font-size: clamp(1.6rem, 4.5vw, 2.8rem);
+    }
+  }
+
+  /* ── CASE STUDIES MOBILE RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .cs-header {
+      padding: 24px 28px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    
+    .cs-client-name {
+      font-size: 20px;
+    }
+    
+    .cs-client-meta {
+      font-size: 12px;
+    }
+    
+    .cs-role-badge {
+      align-self: flex-start;
+      font-size: 11px;
+      padding: 5px 12px;
+    }
+    
+    .cs-body {
+      padding: 24px 28px;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    
+    .cs-section h4 {
+      font-size: 10px;
+      letter-spacing: 1.5px;
+    }
+    
+    .cs-section p {
+      font-size: 13px;
+    }
+    
+    .cs-metrics {
+      padding: 20px 28px;
+      gap: 24px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cs-metric-num {
+      font-size: 24px;
+    }
+    
+    .cs-metric-label {
+      font-size: 11px;
+    }
+    
+    .mini-chart {
+      height: 36px;
+      gap: 3px;
+    }
+    
+    .mini-bar {
+      width: 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cs-header {
+      padding: 20px 24px;
+    }
+    
+    .cs-client-name {
+      font-size: 18px;
+    }
+    
+    .cs-client-meta {
+      font-size: 11px;
+      line-height: 1.5;
+    }
+    
+    .cs-body {
+      padding: 20px 24px;
+      gap: 20px;
+    }
+    
+    .cs-section p {
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    
+    .cs-metrics {
+      padding: 18px 24px;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    
+    .cs-metric-num {
+      font-size: 22px;
+    }
+    
+    .cs-metric-label {
+      font-size: 10px;
+    }
+    
+    .mini-chart {
+      height: 32px;
+      gap: 2px;
+    }
+    
+    .mini-bar {
+      width: 7px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .cs-header {
+      padding: 18px 20px;
+    }
+    
+    .cs-client-name {
+      font-size: 16px;
+    }
+    
+    .cs-client-meta {
+      font-size: 10px;
+    }
+    
+    .cs-role-badge {
+      font-size: 10px;
+      padding: 4px 10px;
+    }
+    
+    .cs-body {
+      padding: 18px 20px;
+      gap: 18px;
+    }
+    
+    .cs-section h4 {
+      font-size: 9px;
+      margin-bottom: 8px;
+    }
+    
+    .cs-section p {
+      font-size: 11px;
+    }
+    
+    .cs-metrics {
+      padding: 16px 20px;
+      gap: 18px;
+    }
+    
+    .cs-metric-num {
+      font-size: 20px;
+    }
+    
+    .cs-metric-label {
+      font-size: 9px;
+    }
+  }
+
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Pratham<span>.</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#casestudies">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#contact" class="nav-cta">Let's Talk →</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content fade-in visible">
+    <div class="hero-badge">Available for New Projects</div>
+    <h1 class="hero-headline">
+      <span class="line">Performance‑Driven</span>
+      <span class="line accent-word">Digital Marketer</span>
+      <span class="line">Built for <span class="gold-word">ROI</span></span>
+    </h1>
+    <p class="hero-sub">I help brands grow revenue, dominate search rankings, and scale with data-driven paid ads — not guesswork.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Hire Me →</a>
+      <a href="#casestudies" class="btn-outline">View Case Studies</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-container">
+    <div class="stat">
+      <span class="stat-num">7<span>+</span></span>
+      <span class="stat-label">Brands Scaled</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">300<span>%</span></span>
+      <span class="stat-label">Avg. Traffic Growth</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">4.2<span>x</span></span>
+      <span class="stat-label">Avg. ROAS Delivered</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">1<span>+</span></span>
+      <span class="stat-label">Years of Impact</span>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-visual fade-in">
+      <img src="/main.jpg" alt="Pratham Athurti" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%; border-radius: 20px;">
+      <div class="about-badge-float">
+        <strong>1+ Year</strong>
+        <span>Hands-on Growth Marketing</span>
+      </div>
+    </div>
+    <div class="about-text fade-in">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Where Strategy Meets Execution</h2>
+      <p>I'm <strong>Pratham Athurti</strong>, a results-first digital marketing consultant specialising in growth strategy, brand authority, and performance advertising. With over a year of hands-on experience, I've partnered with founders and businesses across health, fashion, manufacturing, and eCommerce verticals.</p>
+      <p>My approach is simple: <strong>data in, revenue out.</strong> I combine SEO dominance, conversion-focused Meta Ads, beautifully engineered Shopify stores, and strategic social media to build brands that don't just exist online — they dominate.</p>
+      <p>Whether it's ranking a health brand in Google's Top 3, engineering a Shopify storefront that converts, or running Meta campaigns with a 4x+ ROAS — I bring the full stack of digital growth under one roof.</p>
+      <div class="about-pills">
+        <span class="about-pill">Growth Marketing</span>
+        <span class="about-pill">Paid Ads</span>
+        <span class="about-pill">SEO Strategy</span>
+        <span class="about-pill">eCommerce</span>
+        <span class="about-pill">Shopify Dev</span>
+        <span class="about-pill">Brand Scaling</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label">What I Do</div>
+  <h2 class="section-title">Services Engineered for Growth</h2>
+  <p class="section-sub">Full-stack digital marketing — from organic SEO to paid performance, development to content creation.</p>
+  <div class="services-grid">
+
+    <div class="service-card fade-in">
+      <div class="service-icon" style="background:rgba(0,229,255,0.1)">🔍</div>
+      <h3>SEO</h3>
+      <p>Rank in Google's Top 3 with technical audits, keyword domination strategy, and content authority building that drives compounding organic growth.</p>
+      <div class="service-tags">
+        <span class="service-tag">Top 3 Rankings</span>
+        <span class="service-tag">Organic Traffic</span>
+        <span class="service-tag">Keyword Strategy</span>
+        <span class="service-tag">Technical SEO</span>
+      </div>
+    </div>
+
+    <div class="service-card fade-in">
+      <div class="service-icon" style="background:rgba(245,200,66,0.1)">📱</div>
+      <h3>Social Media Marketing</h3>
+      <p>Build a brand people follow, trust, and buy from. Platform-native strategies for Instagram, Facebook & more — turning followers into buyers.</p>
+      <div class="service-tags">
+        <span class="service-tag">Brand Awareness</span>
+        <span class="service-tag">Engagement Growth</span>
+        <span class="service-tag">Content Strategy</span>
+      </div>
+    </div>
+
+    <div class="service-card fade-in">
+      <div class="service-icon" style="background:rgba(123,92,250,0.12)">📣</div>
+      <h3>Meta Ads</h3>
+      <p>High-ROAS Facebook & Instagram campaigns built on deep audience research, compelling creatives, and relentless A/B testing for maximum conversions.</p>
+      <div class="service-tags">
+        <span class="service-tag">4x+ ROAS</span>
+        <span class="service-tag">Low CPC</span>
+        <span class="service-tag">Conversion Ads</span>
+        <span class="service-tag">Retargeting</span>
+      </div>
+    </div>
+
+    <div class="service-card fade-in">
+      <div class="service-icon" style="background:rgba(52,211,153,0.1)">🛒</div>
+      <h3>Shopify Development</h3>
+      <p>Conversion-optimised Shopify storefronts with fast load times, strategic UX design, and seamless mobile experience that turns visitors into customers.</p>
+      <div class="service-tags">
+        <span class="service-tag">CRO Stores</span>
+        <span class="service-tag">Mobile-First</span>
+        <span class="service-tag">Custom Themes</span>
+      </div>
+    </div>
+
+    <div class="service-card fade-in">
+      <div class="service-icon" style="background:rgba(251,113,133,0.1)">🤝</div>
+      <h3>Influencer Marketing</h3>
+      <p>Strategic creator collaborations that amplify brand reach authentically — from micro-influencer campaigns to full-scale product launches.</p>
+      <div class="service-tags">
+        <span class="service-tag">Creator Network</span>
+        <span class="service-tag">Brand Reach</span>
+        <span class="service-tag">ROI-Tracked</span>
+      </div>
+    </div>
+
+    <div class="service-card fade-in">
+      <div class="service-icon" style="background:rgba(251,191,36,0.1)">🎬</div>
+      <h3>Video Editing</h3>
+      <p>High-converting ad creatives and social reels designed to stop the scroll, build brand story, and drive action across every platform.</p>
+      <div class="service-tags">
+        <span class="service-tag">Ad Creatives</span>
+        <span class="service-tag">Reels & Shorts</span>
+        <span class="service-tag">CapCut / Adobe</span>
+      </div>
+    </div>
+
+    <div class="service-card fade-in">
+      <div class="service-icon" style="background:rgba(139,92,246,0.1)">💻</div>
+      <h3>Website Development</h3>
+      <p>Custom-built websites with modern design, fast performance, and seamless user experience — from landing pages to full-scale web platforms.</p>
+      <div class="service-tags">
+        <span class="service-tag">Custom Design</span>
+        <span class="service-tag">Responsive</span>
+        <span class="service-tag">Performance</span>
+      </div>
+    </div>
+
+    <div class="service-card fade-in">
+      <div class="service-icon" style="background:rgba(0,229,255,0.08)">📲</div>
+      <h3>App Development</h3>
+      <p>Purpose-built mobile and web applications for businesses and eCommerce — from concept to launch with clean, scalable architecture.</p>
+      <div class="service-tags">
+        <span class="service-tag">Mobile Apps</span>
+        <span class="service-tag">eCommerce</span>
+        <span class="service-tag">Business Solutions</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CASE STUDIES -->
+<section id="casestudies">
+  <div class="section-label">Portfolio & Case Studies</div>
+  <h2 class="section-title">Real Results. Real Brands.</h2>
+  <p class="section-sub">Documented growth across SEO, paid performance, and eCommerce development for founders who trusted the process.</p>
+
+  <div class="cs-grid">
+
+    <!-- The Punarnava -->
+    <div class="cs-card fade-in">
+      <div class="cs-header">
+        <div>
+          <div class="cs-client-name">thepunarnava.com</div>
+          <div class="cs-client-meta">Founder: Dr. Ashish Semwal · Wellness & Ayurveda Brand</div>
+        </div>
+        <span class="cs-role-badge">SMM · SEO · Meta Ads · Web Dev</span>
+      </div>
+      <div class="cs-body">
+        <div class="cs-section">
+          <h4>Problem</h4>
+          <p>Zero digital presence. No website, no social following, and no paid advertising infrastructure to drive online sales for a premium Ayurveda wellness brand.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Strategy & Execution</h4>
+          <p>Built their website from scratch, deployed keyword-led SEO, created consistent SMM content, and launched Meta Ads targeting health-conscious demographics with retargeting funnels.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Mini Growth Chart</h4>
+          <div class="mini-chart" style="margin-top:6px">
+            <div class="mini-bar" style="height:20%"></div>
+            <div class="mini-bar" style="height:30%"></div>
+            <div class="mini-bar" style="height:45%"></div>
+            <div class="mini-bar" style="height:55%"></div>
+            <div class="mini-bar" style="height:70%"></div>
+            <div class="mini-bar" style="height:85%"></div>
+            <div class="mini-bar" style="height:100%"></div>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin-top:6px">Organic traffic over 6 months</p>
+        </div>
+      </div>
+      <div class="cs-metrics">
+        <div class="cs-metric"><span class="cs-metric-num green">+320%</span><span class="cs-metric-label">Organic Traffic Growth</span></div>
+        <div class="cs-metric"><span class="cs-metric-num gold">3.8x</span><span class="cs-metric-label">Meta Ads ROAS</span></div>
+        <div class="cs-metric"><span class="cs-metric-num blue">-42%</span><span class="cs-metric-label">Cost Per Click</span></div>
+        <div class="cs-metric"><span class="cs-metric-num green">5K+</span><span class="cs-metric-label">Social Followers Built</span></div>
+      </div>
+    </div>
+
+    <!-- YourselfHealthy -->
+    <div class="cs-card fade-in">
+      <div class="cs-header">
+        <div>
+          <div class="cs-client-name">yourselfhealthy.com</div>
+          <div class="cs-client-meta">Founder: Pavitra Kumar · Health & Wellness Platform</div>
+        </div>
+        <span class="cs-role-badge">SEO Expert</span>
+      </div>
+      <div class="cs-body">
+        <div class="cs-section">
+          <h4>Problem</h4>
+          <p>Buried in search results despite quality content. Low domain visibility and weak keyword targeting meant negligible organic traffic and zero page-one presence.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Strategy & Execution</h4>
+          <p>Conducted full technical audit, restructured site architecture, built high-intent keyword clusters, improved Core Web Vitals, and executed targeted backlink outreach.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Ranking Progress</h4>
+          <div class="mini-chart" style="margin-top:6px">
+            <div class="mini-bar" style="height:15%;background:#7B5CFA"></div>
+            <div class="mini-bar" style="height:28%;background:#7B5CFA"></div>
+            <div class="mini-bar" style="height:50%;background:#7B5CFA"></div>
+            <div class="mini-bar" style="height:72%;background:#7B5CFA"></div>
+            <div class="mini-bar" style="height:90%;background:#7B5CFA"></div>
+            <div class="mini-bar" style="height:100%;background:#7B5CFA"></div>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin-top:6px">Google ranking progression</p>
+        </div>
+      </div>
+      <div class="cs-metrics">
+        <div class="cs-metric"><span class="cs-metric-num gold">Top 3</span><span class="cs-metric-label">Google Ranking Achieved</span></div>
+        <div class="cs-metric"><span class="cs-metric-num green">+285%</span><span class="cs-metric-label">Organic Sessions</span></div>
+        <div class="cs-metric"><span class="cs-metric-num blue">+180%</span><span class="cs-metric-label">Keyword Impressions</span></div>
+        <div class="cs-metric"><span class="cs-metric-num green">12+</span><span class="cs-metric-label">Page-1 Keywords</span></div>
+      </div>
+    </div>
+
+    <!-- Digiiness -->
+    <div class="cs-card fade-in">
+      <div class="cs-header">
+        <div>
+          <div class="cs-client-name">digiiness.com</div>
+          <div class="cs-client-meta">Digital Agency · Brand SEO Growth</div>
+        </div>
+        <span class="cs-role-badge">SEO Expert</span>
+      </div>
+      <div class="cs-body">
+        <div class="cs-section">
+          <h4>Problem</h4>
+          <p>As a digital agency, Digiiness needed to rank for competitive marketing keywords — a tough space where only technical precision wins.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Strategy & Execution</h4>
+          <p>Implemented topical authority mapping, optimised service pages with exact-match and LSI keywords, improved page speed, and built niche-relevant citations for local SEO authority.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Growth Trend</h4>
+          <div class="mini-chart" style="margin-top:6px">
+            <div class="mini-bar" style="height:10%"></div>
+            <div class="mini-bar" style="height:22%"></div>
+            <div class="mini-bar" style="height:38%"></div>
+            <div class="mini-bar" style="height:56%"></div>
+            <div class="mini-bar" style="height:78%"></div>
+            <div class="mini-bar" style="height:100%"></div>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin-top:6px">Domain Authority improvement</p>
+        </div>
+      </div>
+      <div class="cs-metrics">
+        <div class="cs-metric"><span class="cs-metric-num green">+240%</span><span class="cs-metric-label">Organic Traffic</span></div>
+        <div class="cs-metric"><span class="cs-metric-num blue">+18pts</span><span class="cs-metric-label">Domain Authority Gain</span></div>
+        <div class="cs-metric"><span class="cs-metric-num gold">Top 5</span><span class="cs-metric-label">Core Keyword Rankings</span></div>
+      </div>
+    </div>
+
+    <!-- Wonblud -->
+    <div class="cs-card fade-in">
+      <div class="cs-header">
+        <div>
+          <div class="cs-client-name">wonblud.com</div>
+          <div class="cs-client-meta">Founder: Bhavneet Singh · Fashion / Lifestyle Brand</div>
+        </div>
+        <span class="cs-role-badge">Meta Ads Expert</span>
+      </div>
+      <div class="cs-body">
+        <div class="cs-section">
+          <h4>Problem</h4>
+          <p>No paid advertising system in place. The brand had an active product catalogue but zero revenue from digital channels — relying entirely on word-of-mouth.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Strategy & Execution</h4>
+          <p>Launched cold + warm Meta Ads funnels with product-specific creatives, targeted lookalike audiences, retargeted website visitors, and optimised for purchase conversions with continuous creative testing.</p>
+        </div>
+        <div class="cs-section">
+          <h4>ROAS Over Time</h4>
+          <div class="mini-chart" style="margin-top:6px">
+            <div class="mini-bar" style="height:25%;background:var(--gold)"></div>
+            <div class="mini-bar" style="height:45%;background:var(--gold)"></div>
+            <div class="mini-bar" style="height:60%;background:var(--gold)"></div>
+            <div class="mini-bar" style="height:80%;background:var(--gold)"></div>
+            <div class="mini-bar" style="height:100%;background:var(--gold)"></div>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin-top:6px">ROAS improvement per month</p>
+        </div>
+      </div>
+      <div class="cs-metrics">
+        <div class="cs-metric"><span class="cs-metric-num gold">4.2x</span><span class="cs-metric-label">Peak ROAS Achieved</span></div>
+        <div class="cs-metric"><span class="cs-metric-num green">+190%</span><span class="cs-metric-label">Revenue via Paid Ads</span></div>
+        <div class="cs-metric"><span class="cs-metric-num blue">3.8%</span><span class="cs-metric-label">Avg. CTR</span></div>
+        <div class="cs-metric"><span class="cs-metric-num green">-38%</span><span class="cs-metric-label">CPC Reduction</span></div>
+      </div>
+    </div>
+
+    <!-- Adchem -->
+    <div class="cs-card fade-in">
+      <div class="cs-header">
+        <div>
+          <div class="cs-client-name">adchem-industries.com</div>
+          <div class="cs-client-meta">Founder: Mr. Samir De · Industrial Manufacturing</div>
+        </div>
+        <span class="cs-role-badge">SEO Expert · Ongoing</span>
+      </div>
+      <div class="cs-body">
+        <div class="cs-section">
+          <h4>Challenge</h4>
+          <p>Industrial B2B sector with high-intent buyer keywords. Low digital presence despite years of offline business success — required aggressive technical and content SEO.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Ongoing Strategy</h4>
+          <p>Building topical authority through product-specific landing pages, implementing structured data markup, improving crawlability, and targeting B2B buyer-intent keywords for sustainable lead generation.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Early Signals</h4>
+          <div class="mini-chart" style="margin-top:6px">
+            <div class="mini-bar" style="height:20%;background:#34D399"></div>
+            <div class="mini-bar" style="height:38%;background:#34D399"></div>
+            <div class="mini-bar" style="height:55%;background:#34D399"></div>
+            <div class="mini-bar" style="height:70%;background:#34D399"></div>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin-top:6px">Impression growth (in progress)</p>
+        </div>
+      </div>
+      <div class="cs-metrics">
+        <div class="cs-metric"><span class="cs-metric-num green">+165%</span><span class="cs-metric-label">Search Impressions</span></div>
+        <div class="cs-metric"><span class="cs-metric-num blue">Active</span><span class="cs-metric-label">Project Status</span></div>
+        <div class="cs-metric"><span class="cs-metric-num gold">B2B</span><span class="cs-metric-label">Lead-Gen Focused</span></div>
+      </div>
+    </div>
+
+    <!-- Canvas and Corner -->
+    <div class="cs-card fade-in">
+      <div class="cs-header">
+        <div>
+          <div class="cs-client-name">canvasandcorner.in</div>
+          <div class="cs-client-meta">Founder: Karan Yadav · Home Décor & Art eCommerce</div>
+        </div>
+        <span class="cs-role-badge">Shopify Developer</span>
+      </div>
+      <div class="cs-body">
+        <div class="cs-section">
+          <h4>Problem</h4>
+          <p>Needed a fully functional, brand-aligned Shopify store. Existing product catalogue lacked a proper online retail experience, costing potential sales daily.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Strategy & Execution</h4>
+          <p>Developed a custom Shopify storefront with conversion-optimised product pages, streamlined checkout flow, mobile-first design, speed optimisation, and integrated analytics for ongoing CRO.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Store Metrics</h4>
+          <div class="mini-chart" style="margin-top:6px">
+            <div class="mini-bar" style="height:35%;background:#34D399"></div>
+            <div class="mini-bar" style="height:55%;background:#34D399"></div>
+            <div class="mini-bar" style="height:80%;background:#34D399"></div>
+            <div class="mini-bar" style="height:100%;background:#34D399"></div>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin-top:6px">Conversion rate over store lifetime</p>
+        </div>
+      </div>
+      <div class="cs-metrics">
+        <div class="cs-metric"><span class="cs-metric-num green">95+</span><span class="cs-metric-label">PageSpeed Score</span></div>
+        <div class="cs-metric"><span class="cs-metric-num gold">3.2%</span><span class="cs-metric-label">Store Conversion Rate</span></div>
+        <div class="cs-metric"><span class="cs-metric-num blue">-55%</span><span class="cs-metric-label">Bounce Rate Drop</span></div>
+      </div>
+    </div>
+
+    <!-- Lillymin -->
+    <div class="cs-card fade-in">
+      <div class="cs-header">
+        <div>
+          <div class="cs-client-name">lillymin.in</div>
+          <div class="cs-client-meta">Founder: Krishna Singh · Lifestyle & Wellness Brand</div>
+        </div>
+        <span class="cs-role-badge">SEO Expert</span>
+      </div>
+      <div class="cs-body">
+        <div class="cs-section">
+          <h4>Problem</h4>
+          <p>Strong brand identity but invisible on Google. Competitors were capturing high-intent organic searches that should have been converting for Lillymin.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Strategy & Execution</h4>
+          <p>Executed on-page SEO overhaul, implemented entity-based content strategy, fixed technical crawl errors, and built a strong internal link architecture to pass authority through key pages.</p>
+        </div>
+        <div class="cs-section">
+          <h4>Traffic Growth</h4>
+          <div class="mini-chart" style="margin-top:6px">
+            <div class="mini-bar" style="height:12%"></div>
+            <div class="mini-bar" style="height:30%"></div>
+            <div class="mini-bar" style="height:55%"></div>
+            <div class="mini-bar" style="height:78%"></div>
+            <div class="mini-bar" style="height:92%"></div>
+            <div class="mini-bar" style="height:100%"></div>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin-top:6px">Monthly organic sessions</p>
+        </div>
+      </div>
+      <div class="cs-metrics">
+        <div class="cs-metric"><span class="cs-metric-num gold">Top 3</span><span class="cs-metric-label">Google Ranking Achieved</span></div>
+        <div class="cs-metric"><span class="cs-metric-num green">+310%</span><span class="cs-metric-label">Organic Traffic Lift</span></div>
+        <div class="cs-metric"><span class="cs-metric-num blue">+220%</span><span class="cs-metric-label">Keyword Visibility</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">Skills & Tools</div>
+  <h2 class="section-title">Built on the Best Stack</h2>
+  <p class="section-sub">Proficiency across the modern digital marketing and development toolkit.</p>
+
+  <div class="skills-grid">
+    <div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-name">Search Engine Optimisation (SEO)</span><span class="skill-pct">90%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-name">Meta Ads (Facebook & Instagram)</span><span class="skill-pct">85%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-name">Social Media Marketing</span><span class="skill-pct">88%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-name">Shopify Development</span><span class="skill-pct">82%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82"></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-name">Video Editing & Creative</span><span class="skill-pct">80%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-name">Influencer Marketing</span><span class="skill-pct">78%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-name">App Development</span><span class="skill-pct">72%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="72"></div></div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-header"><span class="skill-name">Analytics & Reporting</span><span class="skill-pct">87%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="87"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tools-grid" style="margin-top:56px">
+    <div class="tool-chip"><span class="tool-icon">📊</span> Google Analytics</div>
+    <div class="tool-chip"><span class="tool-icon">🔎</span> Google Search Console</div>
+    <div class="tool-chip"><span class="tool-icon">📣</span> Meta Ads Manager</div>
+    <div class="tool-chip"><span class="tool-icon">🔬</span> SEMrush</div>
+    <div class="tool-chip"><span class="tool-icon">🪝</span> Ahrefs</div>
+    <div class="tool-chip"><span class="tool-icon">🛒</span> Shopify</div>
+    <div class="tool-chip"><span class="tool-icon">🎨</span> Canva</div>
+    <div class="tool-chip"><span class="tool-icon">🎬</span> CapCut</div>
+    <div class="tool-chip"><span class="tool-icon">🖌️</span> Adobe Tools</div>
+    <div class="tool-chip"><span class="tool-icon">📱</span> App Frameworks</div>
+    <div class="tool-chip"><span class="tool-icon">📈</span> Google Trends</div>
+    <div class="tool-chip"><span class="tool-icon">💬</span> Meta Business Suite</div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label">Testimonials</div>
+  <h2 class="section-title">What Founders Say</h2>
+  <p class="section-sub">Words from the people whose brands I've helped grow.</p>
+
+  <div class="testi-grid">
+
+    <div class="testi-card fade-in">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Pratham built our entire digital presence from zero. Our website, our social media, and our Meta Ads strategy — all under one hand. The organic traffic growth we've seen in just a few months has been remarkable. He genuinely understands the wellness industry."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">AS</div>
+        <div>
+          <div class="testi-name">Dr. Ashish Semwal</div>
+          <div class="testi-role">Founder, thepunarnava.com</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card fade-in">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Within a few months of working with Pratham, we were ranking in the Top 3 on Google for our main keywords. The increase in organic traffic directly translated to more inquiries and sales. His SEO methodology is structured and effective."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">PK</div>
+        <div>
+          <div class="testi-name">Pavitra Kumar</div>
+          <div class="testi-role">Founder, yourselfhealthy.com</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card fade-in">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Pratham's Meta Ads campaigns completely changed our revenue picture. We went from zero paid ad revenue to a consistent 4x+ ROAS. His ability to test creatives quickly and cut losing ad sets has saved us significant budget while driving real sales."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">BS</div>
+        <div>
+          <div class="testi-name">Bhavneet Singh</div>
+          <div class="testi-role">Founder, wonblud.com</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card fade-in">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"The Shopify store Pratham built for Canvas and Corner is exactly what we needed — clean, fast, and designed to convert. Customers have complimented the experience, and our bounce rate dropped significantly after launch. Highly professional work."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">KY</div>
+        <div>
+          <div class="testi-name">Karan Yadav</div>
+          <div class="testi-role">Founder, canvasandcorner.in</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card fade-in">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"We needed an SEO expert who understood B2B industrial marketing — not just generic tactics. Pratham came in with a clear plan, and we're already seeing early ranking improvements and more qualified search traffic. Looking forward to the long-term results."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SD</div>
+        <div>
+          <div class="testi-name">Mr. Samir De</div>
+          <div class="testi-role">Founder, adchem-industries.com</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card fade-in">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-quote">"Pratham's SEO work for Lillymin was exceptional. We went from being invisible on search engines to ranking in the Top 3. The traffic growth has been consistent and keeps climbing. He's thorough, communicates well, and delivers what he promises."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">KS</div>
+        <div>
+          <div class="testi-name">Krishna Singh</div>
+          <div class="testi-role">Founder, lillymin.in</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="section-label" style="text-align:center">Let's Work Together</div>
+    <h2 class="contact-headline">Ready to Scale Your <span>Brand?</span></h2>
+    <p class="contact-sub">Whether you want to dominate search rankings, launch high-converting ad campaigns, or build an eCommerce store that sells — let's build something great together.</p>
+    <div class="contact-cards">
+      <a href="mailto:Prathamkumar1703@gmail.com" class="contact-card">
+        <span class="contact-card-icon">✉️</span>
+        <div>
+          <div class="contact-card-label">Email Me</div>
+          <div class="contact-card-val">Prathamkumar1703@gmail.com</div>
+        </div>
+      </a>
+      <a href="https://wa.me/916398755408" class="contact-card" target="_blank">
+        <span class="contact-card-icon">💬</span>
+        <div>
+          <div class="contact-card-label">WhatsApp</div>
+          <div class="contact-card-val">+91 63987 55408</div>
+        </div>
+      </a>
+    </div>
+    <a href="mailto:Prathamkumar1703@gmail.com" class="btn-primary" style="font-size:17px; padding:18px 40px; display:inline-flex;">
+      Start a Project →
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2025 Pratham Athurti. All rights reserved.</div>
+  <div style="display:flex;gap:16px;align-items:center;">
+    <a href="https://www.linkedin.com/in/pratham-athurti/" target="_blank" style="color:var(--muted);text-decoration:none;transition:color .2s;cursor:pointer;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">LinkedIn</a>
+    <span style="color:var(--border)">|</span>
+    <a href="https://www.instagram.com/pratham_athurti01/" target="_blank" style="color:var(--muted);text-decoration:none;transition:color .2s;cursor:pointer;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">Instagram</a>
+  </div>
+  <div style="color:var(--muted)">Performance-Driven Digital Marketing Consultant</div>
+</footer>
+
+<script>
+  // Intersection Observer for fade-in
+  const fadeEls = document.querySelectorAll('.fade-in:not(.visible)');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  fadeEls.forEach(el => observer.observe(el));
+
+  // Stats section visibility on scroll
+  const statsSection = document.querySelector('#stats');
+  if (statsSection) {
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          statsSection.classList.add('visible');
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    statsObserver.observe(statsSection);
+  }
+
+  // Skill bars animation
+  const skillObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+          bar.style.width = bar.dataset.width + '%';
+        });
+        skillObs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  const skillsSection = document.querySelector('#skills');
+  if (skillsSection) skillObs.observe(skillsSection);
+</script>
+</body>
+</html>
